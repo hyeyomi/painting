@@ -106,9 +106,11 @@ input#color{
 .btns span{
     margin-bottom: -5px;
     text-decoration: underline;
-    text-decoration-color: rgba(0, 0, 0, 0.321);
-    text-underline-offset: 3px;
+    text-decoration-color: rgba(65, 105, 225, 0.497);
+    text-underline-offset: 6px;
 }
+
+
 
 button,
 label{
@@ -202,4 +204,17 @@ input#file{
     margin-bottom: -10px;
     transform: rotate(-10deg);
     margin-left: -2px;
+}
+
+.title img:hover{
+    animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate{
+    0%,100%{
+        transform:rotate(-30deg);
+    }
+    50%{
+        transform: rotate(-60deg);
+    }
 }
