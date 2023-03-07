@@ -1,0 +1,205 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+body{
+    gap: 20px; 
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(65, 105, 225, 0.045);
+    padding: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.title{
+    height: 70px;
+    text-align: center;
+    font-size: 45px;
+    padding-top: 30px;
+    padding-bottom: 8px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+canvas{
+    width: 700px;
+    height: 550px;
+    border: 3px black solid;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+
+}
+
+#div-color{
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    gap:20px;
+}
+
+#color{
+    margin-left: -2px;
+    margin-top: 5px;
+    width: 35px;
+    height:30px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#color:hover{
+    opacity: 60%;
+}
+
+.color-option{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px solid rgb(0, 0, 0);
+    transition:transform ease-in-out .2s; /*변환 천천히 부드럽게*/
+}
+
+.color-option:hover{
+    transform: scale(1.2); /*hover할 때 1.2배 커짐*/
+}
+
+input#color{
+    background-color: white;
+    margin-bottom: -30px;
+}
+
+.btns{
+   background-color: white;
+   border:3px black solid;
+   border-radius: 5px;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   gap: 18px;
+   padding: 10px;
+   width: 200px;
+}
+
+.fonts{
+    background-color: white;
+    width: 200px;
+    padding: 10px;
+    border: 3px black solid;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 18px;
+}
+
+.fonts span:first-child{
+    margin-top: 7px;
+}
+
+.fonts span,
+.btns span{
+    margin-bottom: -5px;
+    text-decoration: underline;
+    text-decoration-color: rgba(0, 0, 0, 0.321);
+    text-underline-offset: 3px;
+}
+
+button,
+label{
+    all: unset; /*모든 기존의 css 성질을 삭제해줌*/
+    padding: 10px 0px;
+    text-align: center;
+    background-color: rgba(65, 105, 225, 0.927);
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: opacity linear .1s;
+}
+
+button:hover{
+    opacity: 85%;
+}
+
+input#text{
+    all: unset; /*모든 기존의 css 성질을 삭제해줌*/
+    padding: 10px 0px;
+    text-align: center;
+    font-weight: 500;
+    border-radius: 10px;
+    background-color:rgba(65, 105, 225, 0.4);
+}
+
+
+input#file{
+    display: none;
+}
+
+#mode-btn{
+    width: 95px;
+    display: inline;
+    padding-right: 2px;
+}
+
+#eraser-btn{
+    width:95px;
+    display: inline;
+    padding-right: 2px;
+}
+
+#photo_space{
+    background-color: white;
+    border: 3px rgba(0, 0, 0, 0.541) solid;
+    border-radius: 5px;
+    height: 220px;
+    margin-top: 7px;
+    overflow: hidden;
+}
+
+.btns span{
+    margin-top: 7px;
+}
+
+#photo_space img{
+    width: 200px;
+    height: 220px;
+}
+
+#palette_span{
+    margin-top: 3px;
+}
+#palette{
+    padding-top: 15px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    height: 170px;
+    border: 2px rgba(0, 0, 0, 0.541) solid;
+    border-radius: 5px;
+}
+
+#save img{
+    width:18px;
+    height:18px;
+    margin-bottom: -2px;
+    margin-right: 2px;
+}
+
+#mode-btn img{
+    margin-bottom: -5px;
+    width:19px;
+    height:20px;
+}
+
+.title img{
+    width: 52px;
+    height: 52px;
+    margin-bottom: -10px;
+    transform: rotate(-10deg);
+    margin-left: -2px;
+}
