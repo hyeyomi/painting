@@ -1,61 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meme Maker</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="title"> Painting Canvas <img src="artist.png"/></div>
-<div class="container">
-    <div class="btns">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="title">Painting Canvas <img src="img/artist.png" /></div>
+    <div class="container">
+      <div class="btns">
         <span>Brush Width</span>
-        <input id="line-width" type="range" min="1" max="10" value="5" step="0.5"/> 
-    <div>
-        <button id="mode-btn"><img src="paint-brush.png"> Fill</button>
-        <button id="eraser-btn">❌ Erase</button>
-    </div>
-        <button id="destroy-btn"> ✂ Destroy</button>
+        <input
+          id="line-width"
+          type="range"
+          min="1"
+          max="10"
+          value="5"
+          step="0.5"
+        />
+        <div>
+          <button id="mode-btn"><img src="img/paint-brush.png" /> Fill</button>
+          <button id="eraser-btn">❌ Erase</button>
+        </div>
+        <button id="destroy-btn">✂ Destroy</button>
         <div id="photo_space"></div>
         <label for="file">
-            ✔ Add Photo
-        <input type="file" accept="image/*" id="file" />
+          ✔ Add Photo
+          <input type="file" accept="image/*" id="file" />
         </label>
-        <button id="save"><img src="diskette.png"/> Save image</button>
-        </div>
-               
-     <canvas></canvas>
+        <button id="save"><img src="img/diskette.png" /> Save image</button>
+      </div>
 
-    <div class="fonts">
+      <canvas></canvas>
+
+      <div class="fonts">
         <span>Text</span>
         <input type="text" placeholder="Add text here :)" id="text" />
         <span>Font Size</span>
-        <input id="font_width" type="range" min="15" max="40" step="2"/>
+        <input id="font_width" type="range" min="15" max="40" step="2" />
         <span>Font</span>
         <button id="font_type" value="Serif">Serif</button>
         <span>Stroke or Fill</span>
         <button id="line_type">Stroke</button>
         <span id="palette_span">🎨 Palette</span>
         <div id="palette">
-            <div id="div-color">
-                <input id="color" type="color"/>
-                <div class="color-option" style="background-color:#eccc68" data-color="#eccc68"></div>
-                <div class="color-option" style="background-color: #ff7f50" data-color="#ff7f50"></div>
-                <div class="color-option" style="background-color: #ff6b81" data-color="#ff6b81"></div>
-                <div class="color-option" style="background-color: #ff6348" data-color="#ff6348"></div>
-                <div class="color-option" style="background-color: #ff4757" data-color="#ff4757"></div>
-                <div class="color-option" style="background-color: #7bed9f" data-color="#7bed9f"></div>
-                <div class="color-option" style="background-color: #70a1ff"
-                data-color="#70a1ff"></div>
-                <div class="color-option" style="background-color:#5352ed" data-color="#5352ed"></div>
-                </div>
+          <div id="div-color">
+            <input id="color" type="color" />
+            <div
+              class="color-option"
+              style="background-color: #eccc68"
+              data-color="#eccc68"
+            ></div>
+            <div
+              class="color-option"
+              style="background-color: #ff7f50"
+              data-color="#ff7f50"
+            ></div>
+            <div
+              class="color-option"
+              style="background-color: #ff6b81"
+              data-color="#ff6b81"
+            ></div>
+            <div
+              class="color-option"
+              style="background-color: #ff6348"
+              data-color="#ff6348"
+            ></div>
+            <div
+              class="color-option"
+              style="background-color: #ff4757"
+              data-color="#ff4757"
+            ></div>
+            <div
+              class="color-option"
+              style="background-color: #7bed9f"
+              data-color="#7bed9f"
+            ></div>
+            <div
+              class="color-option"
+              style="background-color: #70a1ff"
+              data-color="#70a1ff"
+            ></div>
+            <div
+              class="color-option"
+              style="background-color: #5352ed"
+              data-color="#5352ed"
+            ></div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-
 
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
