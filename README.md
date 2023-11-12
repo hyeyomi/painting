@@ -1,2 +1,2 @@
-# painting
- Html,css,js 공부
+# Painting
+Studying for HTML, CSS, JS
